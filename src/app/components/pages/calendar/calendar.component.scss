@@ -1,0 +1,32 @@
+$heading-color: #333333;
+$white-color: #FFFFFF;
+$page-title-bg: #0d3642;
+$green-color: #df6e49;
+
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li {
+         display: inline-block;
+
+        i {
+            background: #3b5998;
+            color: white;
+            width: 25px;
+            height: 25px;
+            display: inline-block;
+            line-height: 25px;
+            text-align: center;
+            transition: .5s;
+            font-size: 16px;
+            border: 1px solid #3b5998;
+            border-radius: 10px;
+
+            &:hover {
+                color:$green-color;
+            }
+        }
+    }
+}

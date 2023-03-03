@@ -1,0 +1,112 @@
+<app-navbar-two></app-navbar-two>
+
+<div class="about-title" style="background: url('./assets/img/live-show/background.jpeg'); background-size: cover">
+    <div class="d-table">
+        <div class="d-table-cell">
+            <div class="title-events text-center">
+                <h1 class="title-events">Our Team</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="team-section pt-100 pb-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="team-card">
+                    <div class="team-img"
+                        [class]="(bioActive && (memberSelected != 'frigo')) ? 'image-overlay': ''">
+                        <img src="assets/img/team/photo-frigo.jpeg" alt="team member">
+
+                        <div class="team-text">
+                            <div class="team-social">
+                                <ul>
+                                    <li><a target="_blank" href="https://www.instagram.com/frigofrigofrigo/"><i class="flaticon-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <h3>Frigo</h3>
+                            <div class="team-bio" >
+                                <ul>
+                                    <li (click)="showBio('frigo')">BIO</li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="team-card">
+                    <div class="team-img" [class]="(bioActive && (memberSelected != 'collo')) ? 'image-overlay': ''">
+                        <img src="assets/img/team/photo-collo.jpeg" alt="team member">
+
+                        <div class="team-text">
+                            <div class="team-social">
+                                <ul>
+                                    <li><a target="_blank" href="https://www.instagram.com/collo_orun/"><i class="flaticon-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <h3>Collo</h3>
+                            <div class="team-bio" >
+                                <ul>
+                                    <li (click)="showBio('collo')">BIO</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="team-card">
+                    <div class="team-img" [class]="(bioActive && (memberSelected != 'rob')) ? 'image-overlay': ''">
+                        <img src="assets/img/team/photo-rob.jpeg" alt="team member">
+
+                        <div class="team-text">
+                            <div class="team-social">
+                                <ul>
+                                    <li><a target="_blank" href="https://www.instagram.com/rob._.mystic/"><i class="flaticon-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <h3>Rob Mystic</h3>
+                            <div class="team-bio" >
+                                <ul>
+                                    <li (click)="showBio('rob')">BIO</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="team-card">
+                    <div class="team-img" [class]="(bioActive && (memberSelected != 'buzz')) ? 'image-overlay': ''">
+                        <img src="assets/img/team/photo-buzz.jpeg" alt="team member">
+
+                        <div class="team-text">
+                            <div class="team-social">
+                                <ul>
+                                    <li><a target="_blank" href="https://www.instagram.com/renato_bboy_buzz/"><i class="flaticon-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <h3>Buzz</h3>
+                            <div class="team-bio" >
+                                <ul>
+                                    <li (click)="showBio('buzz')">BIO</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row box-bio" *ngIf="bioActive">
+            <div [innerHTML]="bio"></div>
+          </div>
+    </div>
+
+
+</section>
