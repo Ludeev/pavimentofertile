@@ -66,14 +66,35 @@ h3 {
 .pt-100 {
     padding-top: 100px;
 }
+.pt-70 {
+    padding-top: 70px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pt-10 {
+    padding-top:10px;
+}
 .pb-70 {
     padding-bottom: 70px;
 }
 .pb-100 {
     padding-bottom: 100px;
 }
+.pb-50 {
+    padding-bottom: 50px;
+}
 .pb-30 {
     padding-bottom: 30px;
+}
+.pl-10 {
+    padding-left:10px;
+}
+.pl-20 {
+    padding-left:20px;
+}
+.pl-30 {
+    padding-left:30px;
 }
 .theme-button {
     z-index: 1;
@@ -107,7 +128,7 @@ h3 {
     }
 }
 .section-title {
-    margin:0 auto 50px;
+    margin:0 auto 15px;
     max-width: 600px;
 
     span {
@@ -543,7 +564,7 @@ h3 {
 /* Banner CSS Start */
 .main-banner {
     position: relative;
-    height: 700px;
+    height: 600px;
 
     .banner-text {
         max-width: 600px;
@@ -605,6 +626,7 @@ h3 {
         right:100px;
         top: 18%;
         width: 43%;
+        margin-bottom:20px;
     }
 }
 /* Banner CSS End */
@@ -1469,8 +1491,9 @@ h3 {
         }
     }
     .contact-form {
-        box-shadow: 0px 2px 25px 0px rgba(12, 0, 46,.10);
-        padding:70px;
+        //box-shadow: 0px 2px 25px 0px rgba(12, 0, 46,.10);
+        border-radius: 8px;
+        padding: 50px;
         background: $white-color;
         position: relative;
 
@@ -1556,9 +1579,11 @@ h3 {
 
 /* Newsletter CSS Start */
 .newsletter-section {
+    margin-top: -25px;
     .newsletter-area {
         background: #507a56;
-        padding:70px;
+        padding:20px;
+        padding-top:10px;
         margin-bottom: -140px;
         z-index: 1;
         position: relative;
@@ -1616,8 +1641,8 @@ h3 {
 
 /* Footer Section CSS Start */
 .footer-area {
-    background:#284b63;
-    padding-top: 235px;
+    background:#1e1e24;//#284b63;
+    padding-top: 165px;
     clip-path: polygon(53% 15%, 100% 0, 100% 43%, 100% 78%, 100% 100%, 32% 100%, 0 100%, 0% 43%, 0 0);
 
     .footer-widget {
@@ -1651,7 +1676,7 @@ h3 {
             color: $white-color;
             font-size: 20px;
             font-weight: 600;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             display: inline-block;
             position: relative;
             padding-bottom: 5px;
@@ -1673,9 +1698,10 @@ h3 {
 
             li {
                 display: block;
-                margin-bottom: 20px;
-                transition: .5s;
+                margin-bottom: 15px;
+                transition: 0.5s;
                 color: $white-color;
+                font-size: 13px;
 
                 a {
                     color: $white-color;
@@ -1710,7 +1736,7 @@ h3 {
     .copyright-area {
         border-top: 1px solid #4a6871;
         padding: 20px 0;
-        margin-top:95px;
+        margin-top:25px;
 
         p {
             color: $white-color;
@@ -1823,7 +1849,7 @@ h3 {
 
 /* Banner CSS Start */
 .banner-style-two {
-    background: #284b63;
+    background: #5b3b4a;//#284b63;
 
     .banner-text {
         h1 {
@@ -2190,7 +2216,7 @@ h3 {
 /**-------------- About Page CSS Start --------------**/
 /* About Title CSS Start */
 .about-title {
-    height: 350px;
+    height: 300px;
     /*background:#55885d;*/
     background: url("./assets/img/landing-back.jpg");
 
@@ -3700,8 +3726,8 @@ ngb-carousel {
 .title-events {
     //color: #e06e49 !important;
     color: $white-color;
-    text-shadow: 3px 4px 4px black;
-    font-size: 80px;
+    //text-shadow: 3px 4px 4px black;
+    font-size: 60px;
 }
 
 .live-show-flyer {
@@ -3775,3 +3801,14 @@ ngb-carousel {
     }
 }
 
+.title-description {
+    font-family: math;
+    font-weight: bold;
+    color: #7c3b4a;
+}
+
+.btn-small {
+    font-size:smaller;
+    padding-top:3px;
+    padding-bottom:3px;
+}

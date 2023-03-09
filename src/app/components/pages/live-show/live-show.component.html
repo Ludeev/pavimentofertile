@@ -10,14 +10,15 @@
     </div>
 </div>
 
-<div class="liveshow-section liveshow-style-two" style="padding-top:70px">
+<div class="liveshow-section liveshow-style-two theory-style-two" style="padding-top:70px">
     <div class="container">
         <div class="row liveshow-area">
             <div class="row d-flex justify-content-center">
-                <div class="col-4 align-self-center">
+
+                <div class="col-md-4 col-xs-10 justify-contenct-center text-center align-self-center pt-30">
                     <img src="assets/img/live-show/flyer.jpg" style="width: 100%;">
                 </div>
-                <div class="col-6 align-self-center">
+                <div class="col-md-6 col-xs-12 align-self-center">
                     <div class="liveshow-text text-left">
                         <h4 class="mb-0 mt-2">Pavimento Fertile Presents:</h4>
                         <h2 class="mb-0 pb-0" style="font-size:41px"><b>COSMIC HEALING MANTRAS</b></h2>
@@ -72,13 +73,10 @@
         </div>
     </div>
 </div>
-
+<app-team-card></app-team-card>
+<!--
 <section class="team-section" style="padding-top:50px">
     <div class="container">
-       <!-- <div class="section-title text-center">
-            <span style="font-size: 25px;">Members</span>
-        </div>
-        -->
         <div class="row">
             <div class="col-lg-3 col-sm-6">
                 <div class="team-card">
@@ -154,15 +152,15 @@
         </div>
     </div>
 </section>
-
-<section class="about-section" style="padding-top:20px">
+-->
+<section class="about-section" style="padding-bottom:60px">
     <div class="container">
         <div class="row">
             <div class="container-fluid">
                 <ngb-carousel interval="3000">
                     <ng-template ngbSlide *ngFor="let image of images">
                         <div class="picsum-img-wrapper">
-                            <img [src]="image" alt="Carousel Photos">
+                            <img [src]="image" alt="Carousel Photos" class="d-block" style="width:600; height:400px;object-fit: cover;">
                         </div>
                     </ng-template>
                 </ngb-carousel>

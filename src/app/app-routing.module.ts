@@ -9,6 +9,7 @@ import { RecordLabelComponent } from './components/pages/record-label/record-lab
 import { EventsComponent } from './components/pages/events/events.component';
 import { LiveShowComponent } from './components/pages/live-show/live-show.component';
 import { CalendarComponent } from './components/pages/calendar/calendar.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 const routes: Routes = [
   {path: '', component: AboutComponent},
@@ -17,7 +18,7 @@ const routes: Routes = [
     {path: 'record-label', component: RecordLabelComponent},
     {path: 'jam-session', component: EventsComponent},
     {path: 'live-show', component: LiveShowComponent},
-    {path: 'team', component: TeamComponent},
+    /*{path: 'team', component: TeamComponent},*/
     {path: 'calendar', component: CalendarComponent},
     {path: 'contact', component: ContactComponent},
     {path: 'error', component: ErrorComponent},
@@ -25,7 +26,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {})],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+  exports: [RouterModule],
 })
 export class AppRoutingModule {}

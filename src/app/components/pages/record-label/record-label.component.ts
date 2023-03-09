@@ -12,7 +12,7 @@ export class RecordLabelComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+  showMore:boolean=false;
   images = ["BACK", "FRONT"].map((n) => `assets/img/record-label/${n}.jpg`);
 
   constructor(config: NgbCarouselConfig) {
@@ -20,5 +20,7 @@ export class RecordLabelComponent implements OnInit {
     config.keyboard = true;
     config.pauseOnHover = true;
   }
+
+
 
 }

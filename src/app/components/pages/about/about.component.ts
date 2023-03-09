@@ -15,7 +15,7 @@ export class AboutComponent{
       {title: 'Third Slide', short: 'Third Slide Short', src: "https://picsum.photos/id/984/900/500"}
     ];*/
 
-    images = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24].map((n) => `assets/img/about/carousel/${n}.jpg`);
+    images = [1,2,14,15,16,5,6,9,21,11,23,24,12,13,17,18,7,8,19,20,3,4,10,22].map((n) => `assets/img/about/carousel/${n}.jpg`);
 
     constructor(config: NgbCarouselConfig) {
       config.interval = 2000;

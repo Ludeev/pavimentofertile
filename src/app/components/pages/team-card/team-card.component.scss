@@ -1,0 +1,31 @@
+.image-overlay {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(83, 81, 81, 0.838);
+        /* opacità del 50% del colore grigio */
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        opacity: 1;
+        /* impostiamo l'opacità dell'immagine a 1 per mantenere la sua qualità */
+    }
+}
+
+.image-selected {
+    border: 4px solid green;
+}
+
+.team-text {
+    padding: 19px !important;
+    bottom: -50px !important;
+}

@@ -31,6 +31,11 @@ import { EventsComponent } from './components/pages/events/events.component';
 import { LiveShowComponent } from './components/pages/live-show/live-show.component';
 import { CalendarComponent } from './components/pages/calendar/calendar.component';
 import { CalendarCardComponent } from './components/pages/calendar-card/calendar-card.component';
+import { TeamCardComponent } from './components/pages/team-card/team-card.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { ApiService } from './services/api.service';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -61,14 +66,18 @@ import { CalendarCardComponent } from './components/pages/calendar-card/calendar
     EventsComponent,
     LiveShowComponent,
     CalendarComponent,
-    CalendarCardComponent
+    CalendarCardComponent,
+    TeamCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy },ApiService],
+  exports: [AppRoutingModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

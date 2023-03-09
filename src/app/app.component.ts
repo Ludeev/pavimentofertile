@@ -2,24 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationStart, NavigationCancel, NavigationEnd } from '@angular/router';
 import { Location, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { filter } from 'rxjs/operators';
+
 declare let $: any;
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
-    providers: [
-        Location, {
-            provide: LocationStrategy,
-            useClass: PathLocationStrategy
-        }
-    ]
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
     location: any;
     routerSubscription: any;
 
-    constructor(private router: Router) {
+    constructor(private router: Router,private locations: Location) {
+        this.location = locations;
     }
 
     ngOnInit(){
