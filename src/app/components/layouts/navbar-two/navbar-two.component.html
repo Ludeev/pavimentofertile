@@ -1,8 +1,17 @@
 <div class="navbar-area navbar-style-two">
     <div class="mobile-nav">
+
         <a routerLink="/" class="logo">
             <img src="assets/img/logo.png" style="height: 40%; width: 40%;" alt="logo">
         </a>
+         <select class="select-lang" #selectedLangMobile (change)="switchLang(selectedLangMobile.value)" style="padding: 5px;border-radius: 9px;">
+                    <option *ngFor="let language of translate.getLangs()" [value]="language"
+                        [selected]="language === translate.currentLang">
+                        {{language}}
+
+                    </option>
+                </select>
+
     </div>
 
     <div class="main-nav">
@@ -13,6 +22,7 @@
                 </a>
 
                 <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+
                     <ul class="navbar-nav m-auto" style="margin-left: 7% !important">
                         <li class="nav-item"><a routerLink="/" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">HOME</a></li>
                         <li class="nav-item"><a routerLink="/record-label" class="nav-link" routerLinkActive="active"[routerLinkActiveOptions]="{exact: true}">RECORD LABEL</a></li>
@@ -26,6 +36,15 @@
 
 
                 </div>
+
+                <select class="select-lang" #selectedLang (change)="switchLang(selectedLang.value)" style="padding: 5px;border-radius: 9px;">
+                    <option *ngFor="let language of translate.getLangs()" [value]="language"
+                        [selected]="language === translate.currentLang">
+                        {{language}}
+
+                    </option>
+                </select>
+
             </nav>
         </div>
     </div>

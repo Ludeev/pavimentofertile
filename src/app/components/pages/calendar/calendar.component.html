@@ -2,7 +2,7 @@
 
 <div class="about-title" style="background: url('./assets/img/calendar/background.jpeg'); background-size: cover">
     <div class="d-table">
-        <div class="d-table-cell">
+        <div class="d-table-cell pt-30">
             <div class="title-events text-center">
                 <h1 class="title-events">Calendar</h1>
             </div>
@@ -14,7 +14,7 @@
     <div class="container">
         <div class="about-text">
             <div class="section-title text-center">
-                <span style="font-size: 25px;">Upcoming Events</span>
+                <span style="font-size: 25px;"[innerHTML]="'calendar.upcoming-event' | translate"></span>
             </div>
         </div>
         <app-calendar-card></app-calendar-card>

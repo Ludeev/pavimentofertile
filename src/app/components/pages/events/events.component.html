@@ -2,7 +2,7 @@
 
 <div class="about-title" style="background: url('./assets/img/events/background.jpeg'); background-size: cover">
     <div class="d-table">
-        <div class="d-table-cell">
+        <div class="d-table-cell pt-30">
             <div class="title-events text-center">
                 <h2 class="title-events">Pavimento Fertile</h2>
                 <h1 class="title-events" style="font-size:46px">Jam Session</h1>
@@ -19,14 +19,7 @@
                     <p class="pb-0 mb-0" style="font-size: 1.10rem;"><b><span
                                 style="font-size:1.30rem; display:inline-block">Pavimento Fertile Jam Session</span>
                         </b>
-                        is a moment of encounter and exchange between Dancers, Musicians, DJs and Street Artists. The
-                        event was born from the need to offer a creative space, where you can build, share and enjoy
-                        artistic experiences.
-                        Since 2010 we have realized over 20 editions in different locations: dance centers,
-                        discotheques, public squares, clubs.
-                        Over the years the event has grown to host internationally recognized dancers and music artists
-                        from Europe and the United States, attracting an ever-increasing number of enthusiasts and
-                        participants.
+                        {{ 'jam-session.description1' | translate}}
 
                     </p>
                 </div>
@@ -57,14 +50,14 @@
     <div class="container">
         <div class="about-text">
             <div class="section-title text-center">
-                <span style="font-size: 25px;">Upcoming Events</span>
+                <span style="font-size: 25px;"[innerHTML]="'calendar.upcoming-event' | translate"></span>
             </div>
         </div>
         <div class="row d-flex justify-content-center align-items-center" style="margin-left:5%; margin-right: 5%;">
             <div class="col-lg-3 col-md-5">
                 <div class="blog-card">
                     <div class="blog-img">
-                        <a routerLink="/blog-details"><img src="assets/img/calendar/check-the-style.jpg"
+                        <a target="_blank" href="https://fb.me/e/379CWQ0Eg?ti=wa"><img src="assets/img/calendar/check-the-style.jpg"
                                 alt="blog image"></a>
                         <div class="blog-date">
                             <span>12 May</span>

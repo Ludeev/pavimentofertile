@@ -12,6 +12,9 @@
     .record-label-desc-web{
         display:block;
     }
+    .flyer-chm {
+        padding-left: 0px;
+    }
 }
 @media (max-width:767px) {
     .record-label-mobile {
@@ -27,6 +30,11 @@
     .record-label-desc-web{
         display:none;
     }
+
+    .flyer-chm {
+        padding-left: 30px;
+    }
+
     /* Default CSS */
     p {
         font-size: 14px;
@@ -76,7 +84,7 @@
             backdrop-filter: blur(10px);
 
             .navbar-nav {
-                height: 300px;
+                height: 350px;
                 overflow-y: scroll;
             }
         }
@@ -86,6 +94,14 @@
             left: 15px;
             z-index: 99999;
             max-width: 90px;
+        }
+        .mobile-nav .select-lang {
+            position: absolute;
+            top: 10px;
+            right: 55px;
+            z-index: 99999;
+            max-width: 90px;
+
         }
         .mean-container .mean-bar {
             background-color: #fff;
@@ -872,7 +888,7 @@
             backdrop-filter: blur(10px);
 
             .navbar-nav {
-                height: 300px;
+                height: 350px;
                 overflow-y: scroll;
             }
         }

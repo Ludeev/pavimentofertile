@@ -1,25 +1,29 @@
 <app-navbar-two></app-navbar-two>
 
 <div class="main-banner banner-style-two record-label-web">
-    <div class="row d-flex align-items-center justify-content-center pt-70 pb-70">
+    <div class="row d-flex align-items-center justify-content-center pt-30 pb-70">
         <div class="col-md-6 col-xs-12 d-flex justify-content-center">
             <div class="banner-text mb-0">
                 <h2 style="color:#fff; font-weight: bold;font-size: 56px; margin-bottom:0">Dancing Around Fire</h2>
                 <h4 style="color:#fff; margin-bottom:10px;">Tommaso Cappellato X Pavimento Fertile</h4>
                 <div class="about-text">
-                    <!--  <div class="row" style="margin-bottom:40px">
-                        <iframe style="border: 0; width: 600px; height: 340px;" src="https://bandcamp.com/EmbeddedPlayer/album=1446952743/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless></iframe>
+                   <div class="row" style="margin-bottom:40px">
+                    <h5 style="color:white; margin-top:20px;margin-bottom:10px;font-weight: 200; font-size:17px" [innerHTML]="'record-label.title1' | translate"></h5>
+                       <iframe style="border: 0; width: 600px; height: 340px;" src="https://bandcamp.com/EmbeddedPlayer/album=871692721/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless></iframe>
+
+                    <a target="_blank"  style="padding-top:20px;color:orange" href="https://pavimentofertile.bandcamp.com/album/dancing-around-fire">
+                        <h5 style="color:#fff" [innerHTML]="'record-label.preorder' | translate"></h5></a>
                     </div>
-                -->
-                    <div>
+
+                   <!--<div>
                         <h5 style="color:white; margin-top:30px;font-weight: 200;">The first single "<b>Made Of Golden
                                 Light</b>" out March 17th on Bandcamp and all digital platforms</h5>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
         <div class="col-md-6 col-xs-12 d-flex justify-content-left">
-            <img src="assets/img/record-label/vinyl_front.png" width="90%" alt="banner image">
+            <img src="assets/img/record-label/vinyl_front.png" width="650px" alt="banner image">
         </div>
     </div>
     <!--<div class="d-table">
@@ -62,8 +66,13 @@
                     </div>
                 -->
                     <div>
-                        <h5 style="color:white; margin-top:30px;font-weight: 200;">The first single "<b>Made Of Golden
-                                Light</b>" out March 17th on Bandcamp and all digital platforms</h5>
+                        <h5 style="color:white; margin-top:30px;font-weight: 200;" [innerHTML]="'record-label.title1' | translate"></h5>
+                       <!-- <iframe style="border: 0; width: 600px; height: 340px;" src="https://bandcamp.com/EmbeddedPlayer/album=1446952743/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/" seamless></iframe>-->
+                       <iframe style="border: 0; width: 100%; height: 300px;" src="https://bandcamp.com/EmbeddedPlayer/album=871692721/size=large/bgcol=333333/linkcol=e99708/artwork=none/transparent=true/"></iframe>
+                    <br/><br/><br/><a target="_blank"  style="color:orange" href="https://pavimentofertile.bandcamp.com/album/dancing-around-fire">
+                        <h5 style="color:#fff" [innerHTML]="'record-label.preorder' | translate"></h5></a>
+                        <!--<h5 style="color:white; margin-top:30px;font-weight: 200;">The first single "<b>Made Of Golden
+                                Light</b>" out March 17th on Bandcamp and all digital platforms</h5>-->
                     </div>
                 </div>
             </div>
@@ -84,39 +93,10 @@
             </ngb-carousel>
         </div>
         <div class="col-5 mt-3 pt-4">
-            <p style="font-weight: 400;">
-                <b>"Dancing Around Fire"</b> is the new album by LA-based drummer and composer <b>Tommaso
-                    Cappellato</b> in partnership with <b>Pavimento Fertile</b>, the Italian break dance collective
-                founded
-                by Paolo "<b>Frigo</b>" Montesi. Inspired by the energy of dance and improvisation, this album
-                serves up a dynamic fusion of experimental soul and timeless grooves that command the
-                body to move.
+            <p style="font-weight: 400;" [innerHTML]="'record-label.description1' | translate">
+
             </p>
-            <p style="font-size:14px; font-weight: 400;">
-                This unique collaboration between dancer and musician was born out of Cappellato’s live
-                performance at the Pavimento Fertile dance jam in 2021. Seeing how Cappellato’s rhythms
-                brought out new layers in the dancers’ movements inspired Montesi to commission an album
-                of original music that celebrates the culture of drum breaks and sampling which fuel freestyle
-                dance.<br /><br />
-
-                The album’s seven tracks, composed by Cappellato in as many days, take the listener
-                straight to the dance floor. Cappellato weaves the soulful vocals of Lalin St. Juste (on “Made
-                of Golden Light”) and Cameron Kinghorn (on “Heart to Mend”) alongside percussive
-                electronic tracks (like “Battle Moves”) that emphasize the importance of the drum in
-                unleashing the power of human expression.<br /><br />
-
-                Described by Gilles Peterson as a “brilliant, amazing drummer”, Cappellato is known as a
-                master manipulator of musical forms and technology who first made his mark on the
-                progressive jazz scene through acclaimed releases such as “Aforemention”
-                (Mashibeats/Ropeadope Records) and “Butterflying” (Mother Tongue Records). Cappellato
-                recorded the album in Los Angeles featuring singer Lalin St. Juste; King Pari founders DJ
-                Stepmom and Cameron Kinghorn; saxophonist Michael Blake; and bass player Andrea
-                Lombardini. The album was mixed by Garfield Adams and mastered by Kelly Hibbert.<br /><br />
-
-                “Dancing Around Fire” is the debut release on Montesi’s new record label, Pavimento Fertile,
-                and is a must listen for all who appreciate the role that dance plays in shaping the musical
-                form.
-            </p>
+            <p style="font-size:14px; font-weight: 400;" [innerHtml]="'record-label.description2' | translate"></p>
         </div>
         <!--<div class="col-4 pt-3" style="margin-top:50px; margin-left:60px">
             <div class="centered">
@@ -137,41 +117,16 @@
 
     <div class="row d-flex justify-content-center" style="margin-left:3%; margin-right: 3%; margin-bottom:20px">
         <div class="col-12 pt-4">
-            <p style="font-weight: 400;">
-                <b>"Dancing Around Fire"</b> is the new album by LA-based drummer and composer <b>Tommaso
-                    Cappellato</b> in partnership with <b>Pavimento Fertile</b>, the Italian break dance collective
-                founded
-                by Paolo "<b>Frigo</b>" Montesi. Inspired by the energy of dance and improvisation, this album
-                serves up a dynamic fusion of experimental soul and timeless grooves that command the
-                body to move.
+            <p style="font-weight: 400;" [innerHTML]="'record-label.description1_mobile' | translate">
+
             </p>
-            <p style="font-size:14px; font-weight: 400;">
-                This unique collaboration between dancer and musician was born out of Cappellato’s live
-                performance at the Pavimento Fertile dance jam in 2021. Seeing how Cappellato’s rhythms
-                brought out new layers in the dancers’ movements inspired Montesi to commission an album
-                of original music that celebrates the culture of drum breaks and sampling which fuel freestyle
-                dance.
+            <p style="font-size:14px; font-weight: 400;" [innerHTML]="'record-label.description2_mobile' | translate">
+
             </p>
             <button *ngIf="!showMore" class="btn btn-success btn-small" (click)="showMore = !showMore"
-            style="font-size:smaller; padding-top:3px; padding-bottom:3px;">Show More</button>
-            <p *ngIf="showMore">
-                The album’s seven tracks, composed by Cappellato in as many days, take the listener
-                straight to the dance floor. Cappellato weaves the soulful vocals of Lalin St. Juste (on “Made
-                of Golden Light”) and Cameron Kinghorn (on “Heart to Mend”) alongside percussive
-                electronic tracks (like “Battle Moves”) that emphasize the importance of the drum in
-                unleashing the power of human expression.<br /><br />
+            style="font-size:smaller; padding-top:3px; padding-bottom:3px;">{{'record-label.button' |translate }}</button>
+            <p *ngIf="showMore" [innerHTML]="'record-label.description3_mobile' | translate">
 
-                Described by Gilles Peterson as a “brilliant, amazing drummer”, Cappellato is known as a
-                master manipulator of musical forms and technology who first made his mark on the
-                progressive jazz scene through acclaimed releases such as “Aforemention”
-                (Mashibeats/Ropeadope Records) and “Butterflying” (Mother Tongue Records). Cappellato
-                recorded the album in Los Angeles featuring singer Lalin St. Juste; King Pari founders DJ
-                Stepmom and Cameron Kinghorn; saxophonist Michael Blake; and bass player Andrea
-                Lombardini. The album was mixed by Garfield Adams and mastered by Kelly Hibbert.<br /><br />
-
-                “Dancing Around Fire” is the debut release on Montesi’s new record label, Pavimento Fertile,
-                and is a must listen for all who appreciate the role that dance plays in shaping the musical
-                form.
             </p>
             <button *ngIf="showMore" class="btn btn-success btn-small" (click)="showMore = !showMore"
             style="font-size:smaller; padding-top:3px; padding-bottom:3px;">Show Less</button>
@@ -277,14 +232,14 @@
     <div class="container">
         <div class="about-text">
             <div class="section-title text-center">
-                <span style="font-size: 25px;">Upcoming Events</span>
+                <span style="font-size: 25px;" [innerHTML]="'calendar.upcoming-event' | translate"></span>
             </div>
         </div>
         <div class="row d-flex justify-content-center align-items-center" style="margin-left:5%; margin-right: 5%;">
             <div class="col-lg-3 col-md-5">
                 <div class="blog-card">
                     <div class="blog-img">
-                        <a routerLink="/blog-details"><img src="assets/img/about/cover.jpg" alt="blog image"></a>
+                        <a routerLink="/record-label"><img src="assets/img/about/cover.jpg" alt="blog image"></a>
                         <div class="blog-date">
                             <span>17 March</span>
                         </div>
@@ -326,7 +281,7 @@
             <div class="col-lg-3 col-md-5">
                 <div class="blog-card">
                     <div class="blog-img">
-                        <a routerLink="/blog-details"><img src="assets/img/about/vinyl.jpg" alt="blog image"></a>
+                        <a routerLink="/record-label"><img src="assets/img/about/vinyl.jpg" alt="blog image"></a>
                         <div class="blog-date">
                             <span>14 April</span>
                         </div>
@@ -342,6 +297,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
 
     </div>

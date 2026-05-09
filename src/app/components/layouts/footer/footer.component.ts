@@ -13,10 +13,15 @@ export class FooterComponent implements OnInit {
     email: string;
     mailingListActive: boolean = true;
     showModal: boolean = false;
+
+    isSubscribed = false;
+    isLoading = false;
+
   ngOnInit(): void {
   }
 
   onSubmit() {
+    this.isLoading = true;
     let list: MailingList[] = [
         {
             Email: this.email,
@@ -24,13 +29,15 @@ export class FooterComponent implements OnInit {
         }
     ]
     this.showModal = true;
-   /* this.apiService.subscribeMailingList(list).subscribe(
+    this.apiService.subscribeMailingList(list).subscribe(
       response => {
-        this.showModal = true;
+        this.isSubscribed = true;
+        //this.showModal = true;
         console.log(response)
         this.mailingListActive = false;
+        this.isLoading = false;
       },
       error => console.log(error)
-    );*/
+    );
   }
 }

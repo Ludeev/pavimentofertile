@@ -1,0 +1,46 @@
+{
+    "about": {
+        "description1": "<b>Pavimento Fertile</b> is an artistic collective that brings together <b>dancers, DJs, producers</b> and <b>street artists</b>.",
+        "description2": "We focus on events, shows and music productions, dance courses and workshops, DJ sets.",
+        "vision": "Music and Dance are creative tools dedicated to personal expression and to the sharing of values and emotions. In a world where the focus of these disciplines is increasingly directed towards competition, the vision of <b>Pavimento Fertile</b> remains focused on artistic and performative freedom."
+    },
+    "record-label": {
+        "title1":"Available on all <b>streaming platforms</b> and Limited Edition 12\" Vinyl",
+        "preorder":"BUY HERE",
+        "description1": "<b>\"Dancing Around Fire\"</b> is the new album by LA-based drummer and composer <b>Tommaso Cappellato</b> in partnership with <b>Pavimento Fertile</b>, the Italian break dance collective founded by Paolo \"<b>Frigo</b>\" Montesi. Inspired by the energy of dance and improvisation, this album serves up a dynamic fusion of experimental soul and timeless grooves that command the body to move.",
+        "description2": "This unique collaboration between dancer and musician was born out of Cappellato’s live performance at the Pavimento Fertile dance jam in 2021. Seeing how Cappellato’s rhythm brought out new layers in the dancers’ movements inspired Montesi to commission an album of original music that celebrates the culture of drum breaks and sampling which fuel freestyle dance.<br /><br /> The album’s seven tracks, composed by Cappellato in as many days, take the listener straight to the dance floor. Cappellato weaves the soulful vocals of Lalin St. Juste (on \"Made of Golden Light\") and Cameron Kinghorn (on \"Heart to Mend\") alongside percussive electronic tracks (like \"Battle Moves\") that emphasize the importance of the drum in unleashing the power of human expression.<br /><br /> Described by Gilles Peterson as a \"brilliant, amazing drummer\", Cappellato is known as a master manipulator of musical forms and technology who first made his mark on the progressive jazz scene through acclaimed releases such as \"Aforemention\" (Mashibeats/Ropeadope Records) and \"Butterflying\" (Mother Tongue Records). Cappellato recorded the album in Los Angeles featuring singer Lalin St. Juste; King Pari founders DJ Stepmom and Cameron Kinghorn; saxophonist Michael Blake; and bass player Andrea Lombardini. The album was mixed by Garfield Adams and mastered by Kelly Hibbert.<br /><br /> \"Dancing Around Fire\" is the debut release on Montesi’s new record label, Pavimento Fertile, and is a must listen for all who appreciate the role that dance plays in shaping the musical form.",
+        "button":"Show more",
+        "description1_mobile": " <b>\"Dancing Around Fire\"</b> is the new album by LA-based drummer and composer <b>Tommaso Cappellato</b> in partnership with <b>Pavimento Fertile</b>, the Italian break dance collective founded by Paolo \"<b>Frigo</b>\" Montesi. Inspired by the energy of dance and improvisation, this album serves up a dynamic fusion of experimental soul and timeless grooves that command the body to move.",
+        "description2_mobile":"This unique collaboration between dancer and musician was born out of Cappellato’s live performance at the Pavimento Fertile dance jam in 2021. Seeing how Cappellato’s rhythms brought out new layers in the dancers’ movements inspired Montesi to commission an album of original music that celebrates the culture of drum breaks and sampling which fuel freestyle dance.<br /><br />",
+        "description3_mobile":"The album’s seven tracks, composed by Cappellato in as many days, take the listener straight to the dance floor. Cappellato weaves the soulful vocals of Lalin St. Juste (on \"Made of Golden Light\") and Cameron Kinghorn (on \"Heart to Mend\") alongside percussive electronic tracks (like \"Battle Moves\") that emphasize the importance of the drum in unleashing the power of human expression.<br /><br /> Described by Gilles Peterson as a \"brilliant, amazing drummer\", Cappellato is known as a master manipulator of musical forms and technology who first made his mark on the progressive jazz scene through acclaimed releases such as \"Aforemention\" (Mashibeats/Ropeadope Records) and \"Butterflying\" (Mother Tongue Records). Cappellato recorded the album in Los Angeles featuring singer Lalin St. Juste; King Pari founders DJ Stepmom and Cameron Kinghorn; saxophonist Michael Blake; and bass player Andrea Lombardini. The album was mixed by Garfield Adams and mastered by Kelly Hibbert.<br /><br /> \"Dancing Around Fire\" is the debut release on Montesi’s new record label, Pavimento Fertile, and is a must listen for all who appreciate the role that dance plays in shaping the musical form."
+    },
+    "live-show": {
+        "description1": "Hip Hop Dance, Live Painting, Musical Improvisation Show.",
+        "description2": "<br /> <b>Concept:</b><br /> Music, Dance and Painting are our Mantras. The Practice of Hip Hop arts becomes a daily ritual to find well-being, care, refuge. The repetition of sounds, movements and techniques becomes a meditative practice, a process of research towards inner depth and at the same time towards cosmic immensity. A dimension made of energy and emotions. <br /><br /> The result of these artistic explorations gives shape to a show that intersects choreographies and solos of the various Hip Hop dances (Breaking / Locking / Hip Hop / House), Live Painting performances and original music produced with drum machines, samplers and synths overlapped with quotes from vinyl records. <br /><br /> <b>With:</b> <br /> Paolo \"<b>Frigo</b>\" Montesi<br /> Davide \"<b>Collo</b>\" Del Gaia<br /> Roberto \"<b>Rob Mystic</b>\" Del Gaia<br /> Renato \"<b>Buzz</b>\" Scapecchi<br /> <br /> <b>Duration:</b> 30 minutes."
+    },
+    "jam-session": {
+        "description1":"is a moment of encounter and exchange between Dancers, Musicians, DJs and Street Artists. The event was born from the need to offer a creative space, where you can build, share and enjoy artistic experiences. Since 2010 we have realized over 20 editions in different locations: dance centers, discotheques, public squares, clubs. Over the years the event has grown to host internationally recognized dancers and music artists from Europe and the United States, attracting an ever-increasing number of enthusiasts and participants."
+    },
+    "calendar": {
+        "upcoming-event": "Upcoming Events"
+    },
+    "contact" : {
+        "name": "Name",
+        "email": "Email",
+        "subject":"Subject",
+        "message":"Message",
+        "button":"Send Message",
+        "loading":"Sending.."
+    },
+    "newsletter": {
+        "title":"LET'S STAY IN TOUCH",
+        "description":"Join our newsletter for the latest news",
+        "email":"Enter Your Email",
+        "button":"Subscribe",
+        "thanks-message":"Thank you for your subscription!"
+    },
+    "footer": {
+        "title":"We're an artistic collective of Dancers, DJs and Producers.",
+        "links":"Quick Links"
+    }
+}

@@ -1,76 +1,66 @@
 <div class="newsletter-section">
     <div class="container" style="max-width: 900px;">
         <div class="newsletter-area">
-            <h2 class="m-0 p-2">LET'S STAY IN TOUCH</h2>
-            <h5 class="p-1"style="color:#fff">Join our newsletter for the latest news</h5>
-            <div class="col-lg-6 offset-lg-3 p-0">
+            <h2 class="m-0 p-2" [innerHTML]="'newsletter.title' | translate"></h2>
+            <h5 class="p-1"style="color:#fff" [innerHTML]="'newsletter.description' | translate"></h5>
+            <div *ngIf="!isSubscribed" class="col-lg-6 offset-lg-3 p-0">
                 <form class="newsletter-form" (ngSubmit)="onSubmit()">
-                    <input type="email" class="form-control" [(ngModel)]="email" placeholder="Enter Your Email" name="EMAIL">
-                    <button class="default-btn electronics-btn" type="submit">Subscribe</button>
+                    <input type="email" class="form-control" [(ngModel)]="email" placeholder="{{'newsletter.email' | translate}}" name="EMAIL">
+                    <button type="submit" class="default-btn electronics-btn" [disabled]="isLoading">
+                        <span *ngIf="!isLoading">{{'newsletter.button'| translate}}</span>
+                        <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        <span *ngIf="isLoading"></span>
+                      </button>
                 </form>
+            </div>
+            <div *ngIf="isSubscribed" class="col-lg-6 offset-lg-3 p-0">
+                <h3 style="color:white" [innerHTML]="'newsletter.thanks-message' | translate"></h3>
             </div>
         </div>
     </div>
 </div>
 
-<div class="modal" tabindex="-1" role="dialog" [ngClass]="{'show': showModal}">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Titolo del modal</h5>
-          <button type="button" class="close" (click)="showModal = false">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <p>Contenuto del modal</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" (click)="showModal = false">Chiudi</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
 
-<footer class="footer-area">
+
+<footer class="footer-area ">
     <div class="container">
         <div class="row d-flex justify-content-center">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6" style="margin-left:30px">
                 <div class="footer-widget">
                     <div class="footer-logo">
                         <a routerLink="/"><img src="assets/img/logo.png" style="width: 25%;" alt="logo"></a>
                     </div>
-                    <p>We're an artistic collective of Dancers, DJs and Producers.</p>
+                    <p [innerHTML]="'footer.title' | translate"></p>
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6" style="margin-left:30px">
                 <div class="footer-widget pl-75">
-                    <h3>Quick Links</h3>
+                    <h3 [innerHTML]="'footer.links' | translate"></h3>
 
                     <ul>
                         <li><a routerLink="/"><i class="flaticon-right"></i> Home</a></li>
                         <li><a routerLink="/record-label"><i class="flaticon-right"></i> Record Label</a></li>
-                        <li><a routerLink="/events"><i class="flaticon-right"></i> Events</a></li>
                         <li><a routerLink="/live-show"><i class="flaticon-right"></i> Live Show</a></li>
-                        <li><a routerLink="/merch"><i class="flaticon-right"></i> Merch</a></li>
+                        <li><a routerLink="/jam-session"><i class="flaticon-right"></i> Jam Session</a></li>
+                        <!--<li><a routerLink="/merch"><i class="flaticon-right"></i> Merch</a></li>-->
                         <li><a routerLink="/calendar"><i class="flaticon-right"></i> Calendar</a></li>
                         <li><a routerLink="/Contact"><i class="flaticon-right"></i> Contact</a></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-3 col-sm-6" style="margin-left:30px">
                 <div class="footer-widget pl-75">
                     <h3>Find Us</h3>
 
                     <div class="header-social">
                         <ul>
-                            <li><a href="mailto:pavimentofertile@gmail.com" target="_blank"><img src="/assets/svg/email.svg"style="width:10%; margin-right:10px"/>Email</a></li>
-                            <li><a href="https://www.instagram.com/pavimentofertile/" target="_blank"><img src="/assets/svg/instagram.svg"style="width:10%; margin-right:10px"/>Instagram</a></li>
-                            <li><a href="#" target="_blank"><img src="/assets/svg/bandcamp.svg"style="width:10%; margin-right:10px"/>Bandcamp</a></li>
-                            <li><a href="https://www.mixcloud.com/PavimentoFertile/" target="_blank"><img src="/assets/svg/mixcloud.svg"style="width:10%; margin-right:10px"/>Mixcloud</a></li>
+                            <li><a href="mailto:pavimentofertile@gmail.com" target="_blank"><img src="/assets/svg/email.svg"style="width:8%; margin-right:10px"/>Email</a></li>
+                            <li><a href="https://www.instagram.com/pavimentofertile/" target="_blank"><img src="/assets/svg/instagram.svg"style="width:8%; margin-right:10px"/>Instagram</a></li>
+                            <li><a href="https://pavimentofertile.bandcamp.com/releases" target="_blank"><img src="/assets/svg/bandcamp.svg"style="width:8%; margin-right:10px"/>Bandcamp</a></li>
+                            <li><a href="https://www.mixcloud.com/PavimentoFertile/" target="_blank"><img src="/assets/svg/mixcloud.svg"style="width:8%; margin-right:10px"/>Mixcloud</a></li>
                         </ul>
                     </div>
                 </div>
@@ -88,7 +78,7 @@
         </div>
     </div>
 </footer>
-
+<!--
 <div class="right-modal">
     <div class="modal fade right" id="sidebar-right" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
@@ -141,3 +131,4 @@
         </div>
     </div>
 </div>
+-->

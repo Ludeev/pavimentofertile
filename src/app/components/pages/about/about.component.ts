@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-about',
@@ -15,11 +16,15 @@ export class AboutComponent{
       {title: 'Third Slide', short: 'Third Slide Short', src: "https://picsum.photos/id/984/900/500"}
     ];*/
 
-    images = [1,2,14,15,16,5,6,9,21,11,23,24,12,13,17,18,7,8,19,20,3,4,10,22].map((n) => `assets/img/about/carousel/${n}.jpg`);
-
-    constructor(config: NgbCarouselConfig) {
+    images = [2,16,5,6,9,21,11,23,1,24,12,13,17,18,7,8,19,20,3,4,10,22].map((n) => `assets/img/about/carousel/${n}.jpg`);
+    translate: any;
+    constructor(
+        config: NgbCarouselConfig,
+        translate: TranslateService
+        ) {
       config.interval = 2000;
       config.keyboard = true;
       config.pauseOnHover = true;
+      this.translate = translate;
     }
 }

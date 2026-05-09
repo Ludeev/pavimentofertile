@@ -2,7 +2,7 @@
 
 <div class="about-title" style="background: url('./assets/img/live-show/back-description.jpeg'); background-size: cover">
     <div class="d-table">
-        <div class="d-table-cell">
+        <div class="d-table-cell pt-30">
             <div class="title-events text-center">
                 <h1 class="title-events">Contact</h1>
             </div>
@@ -23,35 +23,43 @@
             <div class="col-md-6 col-xs-12 p-0 ">
                 <div class="contact-form">
 
+                    <div *ngIf="isSubmitted" class="alert alert-success" role="alert">
+                        <span *ngIf="isSent">Message sent with success!</span>
+                        <span *ngIf="!isSent">Error! retry later.</span>
+                      </div>
 
-                    <form id="contactForm">
+                    <form id="contactForm" (ngSubmit)="onSubmit()" #emailForm="ngForm">
                         <div class="row">
                             <div class="col-md-12 col-sm-6">
                                 <div class="form-group mb-3">
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Name">
+                                    <input type="text" name="name" required [(ngModel)]="name" id="name" class="form-control" placeholder="{{'contact.name' | translate}}">
                                 </div>
                             </div>
 
                             <div class="col-md-12 col-sm-6">
                                 <div class="form-group mb-3">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email">
+                                    <input type="email" name="email" required [(ngModel)]="email" id="email" class="form-control" placeholder="Email">
                                 </div>
                             </div>
 
                             <div class="col-md-12 col-sm-6">
                                 <div class="form-group mb-3">
-                                    <input type="text" name="msg_subject" id="msg_subject" class="form-control" placeholder="Subject">
+                                    <input type="text" name="msg_subject" id="msg_subject" required [(ngModel)]="subject" class="form-control" placeholder="{{'contact.subject'| translate}}">
                                 </div>
                             </div>
 
                             <div class="col-lg-12 col-md-12">
                                 <div class="form-group mb-3">
-                                    <textarea name="message" class="message-field" id="message" cols="30" rows="5" placeholder="Message"></textarea>
+                                    <textarea name="message" class="message-field" required [(ngModel)]="message"  id="message" cols="30" rows="5" placeholder="{{'contact.message' | translate}}"></textarea>
                                 </div>
                             </div>
 
                             <div class="col-lg-12 col-md-12">
-                                <button type="submit" class="default-btn contact-btn">Send Message</button>
+                                <button type="submit" class="default-btn contact-btn" [disabled]="isLoading">
+                                    <span *ngIf="!isLoading">{{'contact.button' | translate}}</span>
+                                    <span *ngIf="isLoading" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                    <span *ngIf="isLoading" style="padding-left: 5px">{{'contact.loading'| translate}}</span>
+                                  </button>
                             </div>
                         </div>
                     </form>

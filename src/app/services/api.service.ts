@@ -10,7 +10,7 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   subscribeMailingList(mailingList: MailingList[]) {
-    return this.http.post<any>('https://v1.nocodeapi.com/ludee/google_sheets/PlNbFMmKZFzsIKvk/addRows?tabId=MailingList', mailingList);
+    return this.http.post<any>('https://v1.nocodeapi.com/pavimentofertile/google_sheets/arqxieYklFDrUbjV/addRows?tabId=Mailinglist', mailingList);
   }
 
 }

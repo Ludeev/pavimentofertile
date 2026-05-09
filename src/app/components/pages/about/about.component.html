@@ -6,15 +6,16 @@
             <div class="row">
                 <div class="col-md-5 d-none d-sm-block text-center">
                     <div class="fluid-animation-logo">
-                        <img src="assets/img/about/1.jpg" style="width: 35%; height: 3%;" alt="about image">
+                        <img src="assets/img/about/1.jpg" style="width: 200px;" alt="about image">
                     </div>
                 </div>
                 <div class="col-md-5 col-xs-12 title-text text-left" style="padding-left:20px; margin-bottom:10px">
                     <div class=" block-animation-wreps" style="margin-top:5%;">
-                        <h3 style="color:white; text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.736);"><b>Pavimento Fertile</b> is an artistic collective that brings together
-                            <b>dancers</b>, <b>DJs</b>, <b>producers</b> and <b>street artists</b>. </h3>
-                        <h5 style="color:white; text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.736);">
-                            We focus on events, shows and music productions, dance courses and workshops, DJ sets.</h5>
+                        <h3 style="color:white; text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.736);"
+                            [innerHTML]="'about.description1' |translate"></h3>
+
+                        <h5 style="color:white; text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.736);"
+                            [innerHTML]="'about.description2' | translate"></h5>
                     </div>
                 </div>
             </div>
@@ -43,12 +44,8 @@
             </div>
             <div class="col-md-6 col-sm-12">
                 <h4 class="title-description">OUR VISION</h4>
-                <h6 style="color:#444444; ">Music and
-                    Dance are creative tools dedicated to personal expression and to the sharing of values and
-                    emotions.
-                    In a world where the focus of these disciplines is increasingly directed towards
-                    competition, the vision of <b>Pavimento Fertile</b> remains focused on artistic and
-                    performative freedom.</h6>
+                <h6 style="color:#444444; "
+                   [innerHTML]="'about.vision' | translate" ></h6>
             </div>
         </div>
     </div>
@@ -83,7 +80,7 @@
     <div class="container">
         <div class="about-text">
             <div class="section-title text-center">
-                <span style="font-size: 25px;">Upcoming Events</span>
+                <span style="font-size: 25px;" [innerHTML]="'calendar.upcoming-event' | translate"></span>
             </div>
         </div>
         <div class="row d-flex justify-content-center align-items-center">
