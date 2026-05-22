@@ -2,7 +2,12 @@
     "about": {
         "description1": "<b>Pavimento Fertile</b> is an artistic collective that brings together <b>dancers, DJs, producers</b> and <b>street artists</b>.",
         "description2": "We focus on events, shows and music productions, dance courses and workshops, DJ sets.",
-        "vision": "Music and Dance are creative tools dedicated to personal expression and to the sharing of values and emotions. In a world where the focus of these disciplines is increasingly directed towards competition, the vision of <b>Pavimento Fertile</b> remains focused on artistic and performative freedom."
+        "vision": "Music and Dance are creative tools dedicated to personal expression and to the sharing of values and emotions. In a world where the focus of these disciplines is increasingly directed towards competition, the vision of <b>Pavimento Fertile</b> remains focused on artistic and performative freedom.",
+        "vision-title": "Music, Dance and Visual Arts for expressive freedom",
+        "go-to-section": "Discover more",
+        "next-edition": "Next Edition: October 2026",
+        "go-to-record-label": "Discover the album",
+        "available-from": "Available from 31/05/2026"
     },
     "record-label": {
         "title1":"Available on all <b>streaming platforms</b> and Limited Edition 12\" Vinyl",

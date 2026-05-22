@@ -23,59 +23,212 @@
     </div>
 </div>
 
-<section class="about-section pt-30 pb-30">
+<section class="about-section-vision" style="background: #f8f8f8; padding: 60px 0 90px; clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);">  
     <div class="container">
-        <!--<div class="row">
-            <div class="section-title text-center">
-                <span style="font-size: 25px;">About Us</span>
-            </div>
-        </div>-->
         <div class="row d-flex align-items-center justify-content-center">
-            <div class="col-md-6 col-sm-12">
-                <div class="container-fluid">
+            <div class="col-md-6 col-sm-12 mb-4 mb-md-0">
+                <div style="border-radius: 12px; overflow: hidden;  border: 3px solid rgba(160,196,74,0.3);">
                     <ngb-carousel interval="3000">
                         <ng-template ngbSlide *ngFor="let image of images">
-                            <div class="picsum-img-wrapper">
-                                <img [src]="image" alt="Carousel Photos" class="d-block" style="width:600; height:400px;object-fit: cover;">
+                            <div class="picsum-img-wrapper" style="border-radius: 12px; overflow: hidden;">
+                                <img [src]="image" alt="Carousel Photos" class="d-block" style="width:600; height:400px; object-fit: cover; border-radius: 12px;">
                             </div>
                         </ng-template>
                     </ngb-carousel>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
-                <h4 class="title-description">OUR VISION</h4>
-                <h6 style="color:#444444; "
-                   [innerHTML]="'about.vision' | translate" ></h6>
+            <div class="col-md-6 col-sm-12 pl-md-5">
+                <span style="color: #a0c44a; font-size: 0.8rem; letter-spacing: 4px; text-transform: uppercase; font-weight: 700;">Pavimento Fertile</span>
+                <h2 style="font-size: 2rem; font-weight: 800; color: #1a1a2e; margin: 8px 0 20px; text-transform: uppercase; letter-spacing: 2px;">Our Vision</h2>
+                <div style="width: 50px; height: 3px; background: #a0c44a; border-radius: 2px; margin-bottom: 20px;"></div>
+                <p style="color: #444; font-size: 1.05rem; line-height: 1.8;" [innerHTML]="'about.vision' | translate"></p>
             </div>
         </div>
     </div>
 </section>
-<!--
-<section class="about-section pb-30">
-    <div class="container">
-        <div class="about-area">
-            <div class="row align-items-center">
-                <div class="section-title text-center mb-0">
-                    <span>About Us</span>
-                    <!--<h2 class="mb-0">Latest photos...</h2>-->
-             <!--   </div>
-            </div>
 
-            <div class="row">
-                <div class="container-fluid">
-                    <ngb-carousel interval="3000">
-                        <ng-template ngbSlide *ngFor="let image of images">
-                            <div class="picsum-img-wrapper">
-                                <img [src]="image" alt="Carousel Photos">
-                            </div>
-                        </ng-template>
-                    </ngb-carousel>
+<section class="about-section-festival" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 60px 0 90px; margin-top: -60px; clip-path: polygon(0 5%, 100% 0, 100% 90%, 0 100%);">  
+    <div class="container">
+        <div class="text-center mb-40">
+            <h3 style="color: #ffffff; letter-spacing: 3px; text-transform: uppercase; margin: 0 0 0; font-weight: 800;">Dance &amp; Music Festival</h3>
+            <div style="width: 60px; height: 3px; background: #a0c44a; margin: 14px auto 0; border-radius: 2px;"></div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-5 col-sm-12 text-center mb-4 mb-md-0">
+                <div style="position: relative; display: inline-block;">
+                    <img src="assets/img/about/Locandina2025.jpg" alt="Dance and Music Festival locandina"
+                        style="width: 100%; max-width: 300px; border-radius: 12px; box-shadow: 0 16px 48px rgba(0,0,0,0.6); border: 3px solid rgba(160,196,74,0.3);">
+                    <div style="position: absolute; bottom: -12px; left: 50%; transform: translateX(-50%);
+                                background: #a0c44a; color: #1a1a2e; font-size: 0.75rem; font-weight: 700;
+                                padding: 4px 16px; border-radius: 20px; letter-spacing: 2px; white-space: nowrap;">
+                        25–26 OTT 2025
+                    </div>
+                </div>
+                <div style="margin-top: 28px;">
+                    <span style="background: transparent; color: #a0c44a; font-size: 0.85rem; font-weight: 700;
+                                 padding: 6px 16px; border-radius: 50px; letter-spacing: 2px; white-space: nowrap;
+                                 text-transform: uppercase; border: 2px solid #a0c44a;">
+                        <i class="bx bx-calendar" style="font-size: 1rem; vertical-align: middle; margin-right: 6px;"></i>{{ 'about.next-edition' | translate }}
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12 pl-md-4">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;
+                            box-shadow: 0 16px 48px rgba(0,0,0,0.6); border: 2px solid rgba(160,196,74,0.2);">
+                    <iframe
+                        src="https://www.youtube.com/embed/_0mSd5CWraE"
+                        title="Dance and Music Festival Recap"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px;">
+                    </iframe>
                 </div>
             </div>
         </div>
+        <div class="text-align: right; d-flex justify-content-end" style="margin-top: 20px; margin-bottom: 40px; text-align: right;">
+            <a routerLink="/jam-session"
+               style="display: inline-flex; align-items: center; gap: 10px;
+                      background: #a0c44a; color: #1a1a2e; font-weight: 700;
+                      padding: 9px 22px; border-radius: 50px; font-size: 0.8rem;
+                      letter-spacing: 1px; text-decoration: none; text-transform: uppercase;
+                      box-shadow: 0 6px 20px rgba(160,196,74,0.35);">
+                {{ 'about.go-to-section' | translate }}
+                <i class="bx bx-right-arrow-alt" style="font-size: 1.4rem;"></i>
+            </a>
+        </div>
     </div>
 </section>
--->
+
+<section class="about-section-rl" style="background: linear-gradient(135deg, #5b3b4a 0%, #3d2733 100%); padding: 80px 0 130px; margin-top: -120px; clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);">  
+    <div class="container">
+        <div class="text-center" style="margin-bottom: 50px;">
+            <h2 style="color: #ffffff; font-size: 2.2rem; letter-spacing: 3px; text-transform: uppercase; margin: 0; font-weight: 800;">Record Label</h2>
+            <div style="width: 60px; height: 3px; background: #d4a057; margin: 12px auto 0; border-radius: 2px;"></div>
+        </div>
+
+        <!-- The Funkin' Machine -->
+        <div class="rl-card-funkin" style="background: rgb(0 0 0 / 11%); border: 1px solid rgba(244,203,97,0.35); border-radius: 20px;
+                    padding: 36px 40px 36px 60px; margin-bottom: 2px; backdrop-filter: blur(4px);">
+            <div class="row d-flex align-items-center flex-row-reverse">
+                <div class="col-md-6 col-sm-12 text-center mb-4 mb-md-0" style="padding-left: 0;">
+                    <div style="display: inline-block;">
+                        <img src="assets/img/about/PF002.jpg" alt="The Funkin Machine PF002"
+                             style="width: 100%; max-width: 310px; border-radius: 12px; filter: drop-shadow(0 16px 32px rgba(0,0,0,0.7));">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12" style="padding-right: 8px;">
+                    <h3 style="font-size: 1.6rem; font-weight: 800; color: #ffffff; margin: 0 0 6px; line-height: 1.2;">The Funkin' Machine</h3>
+                    <h6 style="color: rgb(244 203 97); font-weight: 600; letter-spacing: 1px; margin-bottom: 16px; font-size: 0.95rem;">Live at Pavimento Fertile 2025</h6>
+                    <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(244,203,97,0.1);
+                                border: 1px solid rgba(244,203,97,0.4); border-radius: 50px; padding: 5px 14px; margin-bottom: 20px;">
+                        <i class="bx bx-time-five" style="color: rgb(244 203 97); font-size: 0.9rem;"></i>
+                        <span style="color: rgb(244 203 97); font-size: 0.78rem; font-weight: 600; letter-spacing: 1px;">{{ 'about.available-from' | translate }}</span>
+                    </div>
+                    <div style="border: 1px solid rgba(244,203,97,0.3); width: 100%; height: 200px; border-radius: 10px;
+                                background: rgba(0,0,0,0.25); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;">
+                        <i class="bx bx-music" style="font-size: 2.5rem; color: rgba(244,203,97,0.4);"></i>
+                        <span style="color: rgba(244,203,97,0.45); font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase;">In arrivo</span>
+                    </div>
+                    <div style="margin-top: 18px;">
+                        <a href="https://pavimentofertile.bandcamp.com/" target="_blank"
+                           style="display: inline-flex; align-items: center; gap: 8px;
+                                  background: rgb(244 203 97); color: #3d2733; font-weight: 700;
+                                  padding: 8px 20px; border-radius: 50px; font-size: 0.78rem;
+                                  letter-spacing: 1px; text-decoration: none; text-transform: uppercase;
+                                  box-shadow: 0 6px 20px rgba(244,203,97,0.35);">
+                            {{ 'about.go-to-record-label' | translate }}
+                            <i class="bx bx-right-arrow-alt" style="font-size: 1.2rem;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Separator -->
+        <div style="display: flex; align-items: center; gap: 16px; padding: 18px 0;">
+            <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, rgba(212,160,87,0.3), transparent);"></div>
+            <i class="bx bx-disc" style="color: rgba(212,160,87,0.4); font-size: 1.2rem;"></i>
+            <div style="flex: 1; height: 1px; background: linear-gradient(to right, transparent, rgba(212,160,87,0.3), transparent);"></div>
+        </div>
+
+        <!-- Dancing Around Fire -->
+        <div class="rl-card-daf" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(212,160,87,0.25); border-radius: 20px;
+                    padding: 36px 40px; backdrop-filter: blur(4px);">
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 col-sm-12 text-center mb-4 mb-md-0">
+                    <div style="display: inline-block;">
+                        <img src="assets/img/record-label/vinyl_front.png" alt="Dancing Around Fire"
+                             style="width: 100%; max-width: 440px; filter: drop-shadow(0 20px 48px rgba(0,0,0,0.8));">
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 daf-text-col" style="padding-left: 28px;">
+                    <h3 style="font-size: 1.6rem; font-weight: 800; color: #ffffff; margin: 0 0 6px; line-height: 1.2;">Dancing Around Fire</h3>
+                    <h6 style="color: #d4a057; font-weight: 600; letter-spacing: 1px; margin-bottom: 16px; font-size: 0.95rem;">Tommaso Cappellato × Pavimento Fertile</h6>
+                    <p style="color: rgba(255,255,255,0.65); font-size: 0.88rem; margin-bottom: 20px; line-height: 1.7;" [innerHTML]="'record-label.title1' | translate"></p>
+                    <iframe style="border: 2px solid rgba(212,160,87,0.6); width: 100%; max-width: 440px; height: 200px; border-radius: 10px;"
+                        src="https://bandcamp.com/EmbeddedPlayer/album=871692721/size=large/bgcol=5b3b4a/linkcol=d4a057/artwork=none/transparent=true/"
+                        seamless></iframe>
+                    <div style="margin-top: 18px;">
+                        <a routerLink="/record-label"
+                           style="display: inline-flex; align-items: center; gap: 8px;
+                                  background: #d4a057; color: #3d2733; font-weight: 700;
+                                  padding: 8px 20px; border-radius: 50px; font-size: 0.78rem;
+                                  letter-spacing: 1px; text-decoration: none; text-transform: uppercase;
+                                  box-shadow: 0 6px 20px rgba(212,160,87,0.35);">
+                            {{ 'about.go-to-record-label' | translate }}
+                            <i class="bx bx-right-arrow-alt" style="font-size: 1.2rem;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about-section-live" style="background: #205da5; padding: 80px 0 60px; margin-top: -120px; clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);">  
+    <div class="container">
+        <div class="text-center" style="margin-bottom: 40px;">
+            <h2 style="color: #ffffff; font-size: 2.2rem; letter-spacing: 3px; text-transform: uppercase; margin: 0; font-weight: 800;">Live Show</h2>
+            <div style="width: 60px; height: 3px; background: #add3ff; margin: 12px auto 0; border-radius: 2px;"></div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="col-md-6 col-sm-12 pl-md-4 mb-4 mb-md-0">
+                <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 12px;
+                            box-shadow: 0 16px 48px rgba(0,0,0,0.5); border: 2px solid #add3ff;">
+                    <iframe
+                        src="https://www.youtube.com/embed/4j6n5M3OKg0"
+                        title="Live Show"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px;">
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 text-center">
+                <img src="assets/img/live-show/flyer.jpg" alt="Live Show flyer"
+                    style="width: 100%; max-width: 300px; border-radius: 12px; box-shadow: 0 16px 48px rgba(0,0,0,0.5); border: 2px solid #add3ff;">
+            </div>
+        </div>
+        <div style="margin-top: 30px; margin-bottom: 10px; display: flex; justify-content: flex-end;">
+            <a routerLink="/live-show"
+               style="display: inline-flex; align-items: center; gap: 10px;
+                      background: #add3ff; color: #1a1a2e; font-weight: 700;
+                      padding: 9px 22px; border-radius: 50px; font-size: 0.8rem;
+                      letter-spacing: 1px; text-decoration: none; text-transform: uppercase;
+                      box-shadow: 0 6px 20px rgba(160,196,74,0.35);">
+                {{ 'about.go-to-section' | translate }}
+                <i class="bx bx-right-arrow-alt" style="font-size: 1.4rem;"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+<ng-container *ngIf="false">
 <section class="blog-section pt-30 pb-30" style="background-color: #bab5b8;">
     <div class="container">
         <div class="about-text">
@@ -85,45 +238,8 @@
         </div>
         <div class="row d-flex justify-content-center align-items-center">
             <app-calendar-card></app-calendar-card>
-            <!--<div class="col-lg-3 col-md-5">
-                <div class="blog-card">
-                    <div class="blog-img">
-                        <a routerLink="/blog-details"><img src="assets/img/about/cover.jpg" alt="blog image"></a>
-                        <div class="blog-date">
-                            <span>15 March</span>
-                        </div>
-                    </div>
-
-                    <div class="blog-text">
-                        <h3>Dancing Around Fire</h3>
-                        <p>Add description</p>
-                        <div class="post-info">
-                            <a routerLink="/record-label" class="blog-btn">More Info<i class="flaticon-right-chevron"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-5">
-                <div class="blog-card">
-                    <div class="blog-img">
-                        <a routerLink="/blog-details"><img src="assets/img/about/vinyl.jpg" alt="blog image"></a>
-                        <div class="blog-date">
-                            <span>14 April</span>
-                        </div>
-                    </div>
-
-                    <div class="blog-text">
-                        <h3>Dancing Around Fire</h3>
-                        <p>Release album</p>
-                        <div class="post-info">
-                            <a routerLink="/record-label" class="blog-btn">More Info<i class="flaticon-right-chevron"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
         </div>
-
     </div>
 </section>
+</ng-container>
 

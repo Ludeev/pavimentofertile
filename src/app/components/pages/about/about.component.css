@@ -1,0 +1,42 @@
+@media (max-width: 767px) {
+
+  /* Rimuove i tagli diagonali su mobile e azzera i margini negativi */
+  .about-section-vision {
+    clip-path: none !important;
+    padding-bottom: 50px !important;
+  }
+
+  .about-section-festival {
+    clip-path: none !important;
+    margin-top: 0 !important;
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+
+  .about-section-rl {
+    clip-path: none !important;
+    margin-top: 0 !important;
+    padding-top: 50px !important;
+    padding-bottom: 60px !important;
+  }
+
+  .about-section-live {
+    clip-path: none !important;
+    margin-top: 0 !important;
+    padding-top: 50px !important;
+  }
+
+  /* Card record label: riduce il padding eccessivo su mobile */
+  .rl-card-funkin {
+    padding: 24px 16px !important;
+  }
+
+  .rl-card-daf {
+    padding: 24px 16px !important;
+  }
+
+  /* Colonna testo DAF: elimina il padding-left fisso */
+  .daf-text-col {
+    padding-left: 15px !important;
+  }
+}

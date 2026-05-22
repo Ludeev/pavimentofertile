@@ -2,7 +2,12 @@
     "about": {
         "description1": "<b>Pavimento Fertile</b> è un collettivo artistico che riunisce <b>ballerini, DJs, musicisti</b> e <b>street artists</b>.",
         "description2": "Ci occupiamo di organizzazione eventi, produzione di spettacoli, produzioni musicali, corsi e workshop di danza, DJ set.",
-        "vision": "Musica, Danza e Arti Visive sono strumenti creativi dedicati all’espressione personale e alla condivisione di valori ed emozioni. In un mondo in cui il focus di queste discipline è sempre più diretto verso la competizione, la visione di <b>Pavimento Fertile</b> rimane concentrata sulla libertà artistica e performativa."
+        "vision": "Musica, Danza e Arti Visive sono strumenti creativi dedicati all'espressione personale e alla condivisione di valori ed emozioni. In un mondo in cui il focus di queste discipline è sempre più diretto verso la competizione, la visione di <b>Pavimento Fertile</b> rimane concentrata sulla libertà artistica e performativa.",
+        "vision-title": "Musica, Danza e Arti Visive per la libertà espressiva",
+        "go-to-section": "Scopri di più",
+        "next-edition": "Prossima edizione: Ottobre 2026",
+        "go-to-record-label": "Scopri il disco",
+        "available-from": "Disponibile dal 31/05/2026"
     },
     "record-label": {
         "title1":"Disponibile su tutte le <b>piattaforme streaming</b> ed in Vinile Edizione Limitata",
